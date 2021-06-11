@@ -1,0 +1,140 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["consultation-consultation-module"],{
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/consultation/consultation.page.html":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/consultation/consultation.page.html ***!
+  \*******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button></ion-menu-button>\n      </ion-buttons>\n    <ion-title>Consultation</ion-title>\n  </ion-toolbar>\n  <ion-card>\n    <ion-card-content>\n    <ion-card-subtitle>tele-consultation</ion-card-subtitle>\n    <ion-card-title>Doctor</ion-card-title>\n    <ion-button fill=\"outline\" slot=\"end\">video call</ion-button>\n   </ion-card-content>\n  </ion-card>\n</ion-header>\n\n<ion-footer>\n  <ion-item>\n    <ion-icon name=\"paper-plane-outline\" slot=\"start\"></ion-icon>\n    <ion-label>type here</ion-label>\n    <ion-button fill=\"outline\" slot=\"end\">send</ion-button>\n  </ion-item>\n\n</ion-footer>");
+
+/***/ }),
+
+/***/ "./src/app/consultation/consultation-routing.module.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/consultation/consultation-routing.module.ts ***!
+  \*************************************************************/
+/*! exports provided: ConsultationPageRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConsultationPageRoutingModule", function() { return ConsultationPageRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+/* harmony import */ var _consultation_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./consultation.page */ "./src/app/consultation/consultation.page.ts");
+
+
+
+
+const routes = [
+    {
+        path: '',
+        component: _consultation_page__WEBPACK_IMPORTED_MODULE_3__["ConsultationPage"]
+    }
+];
+let ConsultationPageRoutingModule = class ConsultationPageRoutingModule {
+};
+ConsultationPageRoutingModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]],
+    })
+], ConsultationPageRoutingModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/consultation/consultation.module.ts":
+/*!*****************************************************!*\
+  !*** ./src/app/consultation/consultation.module.ts ***!
+  \*****************************************************/
+/*! exports provided: ConsultationPageModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConsultationPageModule", function() { return ConsultationPageModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/__ivy_ngcc__/fesm2015/ionic-angular.js");
+/* harmony import */ var _consultation_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./consultation-routing.module */ "./src/app/consultation/consultation-routing.module.ts");
+/* harmony import */ var _consultation_page__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./consultation.page */ "./src/app/consultation/consultation.page.ts");
+
+
+
+
+
+
+
+let ConsultationPageModule = class ConsultationPageModule {
+};
+ConsultationPageModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [
+            _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
+            _consultation_routing_module__WEBPACK_IMPORTED_MODULE_5__["ConsultationPageRoutingModule"]
+        ],
+        declarations: [_consultation_page__WEBPACK_IMPORTED_MODULE_6__["ConsultationPage"]]
+    })
+], ConsultationPageModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/consultation/consultation.page.scss":
+/*!*****************************************************!*\
+  !*** ./src/app/consultation/consultation.page.scss ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".scroll {\n  padding: 10px 0 50px !important;\n}\n\n.messages {\n  display: flex !important;\n  align-content: center !important;\n  align-items: center !important;\n  margin-bottom: 20px !important;\n}\n\n.messages .message {\n  flex: 1 1 auto !important;\n  padding: 10px !important;\n  transition: all 250ms ease-in-out !important;\n  overflow: hidden !important;\n  text-align: left !important;\n  transform: translate3d(0, 0, 0) !important;\n}\n\n.time {\n  flex: 0 1 auto !important;\n  align-self: auto !important;\n  width: 120px !important;\n  text-align: center !important;\n  padding: 0 0 0 0 !important;\n  transition: all 250ms ease-in-out !important;\n  transform: translate3d(10px, 0, 0) !important;\n}\n\n.time.slide-right {\n  transform: translate3d(130px, 0, 0) !important;\n}\n\n.messages.other .message {\n  transform: translate3d(0, 0, 0) !important;\n  text-align: right !important;\n}\n\n.messages.other .message.slide-right {\n  transform: translate3d(120px, 0, 0) !important;\n}\n\n.messages.other span {\n  color: black !important;\n  background-color: #C7C7CC !important;\n}\n\nspan {\n  background: #007AFF !important;\n  display: inline-block !important;\n  color: white !important;\n  padding: 10px !important;\n  border-radius: 10px !important;\n  text-align: left !important;\n  max-width: 240px !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29uc3VsdGF0aW9uL0U6XFx0ZWxldHJlYXRtZW50L3NyY1xcYXBwXFxjb25zdWx0YXRpb25cXGNvbnN1bHRhdGlvbi5wYWdlLnNjc3MiLCJzcmMvYXBwL2NvbnN1bHRhdGlvbi9jb25zdWx0YXRpb24ucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0UsK0JBQUE7QUNERjs7QURHQTtFQUtFLHdCQUFBO0VBR0EsZ0NBQUE7RUFLQSw4QkFBQTtFQUNBLDhCQUFBO0FDQUY7O0FEQ0U7RUFLRSx5QkFBQTtFQUNBLHdCQUFBO0VBRUEsNENBQUE7RUFDQSwyQkFBQTtFQUNBLDJCQUFBO0VBR0EsMENBQUE7QUNDSjs7QURFQTtFQUtFLHlCQUFBO0VBR0EsMkJBQUE7RUFDQSx1QkFBQTtFQUNBLDZCQUFBO0VBQ0EsMkJBQUE7RUFFQSw0Q0FBQTtFQUdBLDZDQUFBO0FDQ0Y7O0FEQUU7RUFHRSw4Q0FBQTtBQ0VKOztBREdFO0VBR0UsMENBQUE7RUFDQSw0QkFBQTtBQ0FKOztBREVFO0VBR0UsOENBQUE7QUNBSjs7QURFRTtFQUNFLHVCQUFBO0VBQ0Esb0NBQUE7QUNBSjs7QURHQTtFQUNFLDhCQUFBO0VBQ0EsZ0NBQUE7RUFDQSx1QkFBQTtFQUNBLHdCQUFBO0VBQ0EsOEJBQUE7RUFDQSwyQkFBQTtFQUNBLDJCQUFBO0FDQUYiLCJmaWxlIjoic3JjL2FwcC9jb25zdWx0YXRpb24vY29uc3VsdGF0aW9uLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiRzdGFibGU6ICAgICAgICAgICAgICAgICAgICAgICAgICAjZjhmOGY4ICFkZWZhdWx0O1xyXG5cclxuLnNjcm9sbCB7XHJcbiAgcGFkZGluZzogMTBweCAwIDUwcHggIWltcG9ydGFudDtcclxufVxyXG4ubWVzc2FnZXMge1xyXG4gIGRpc3BsYXk6IC13ZWJraXQtYm94ICFpbXBvcnRhbnQ7XHJcbiAgZGlzcGxheTogLW1vei1ib3ggIWltcG9ydGFudDtcclxuICBkaXNwbGF5OiAtbXMtZmxleGJveCAhaW1wb3J0YW50O1xyXG4gIGRpc3BsYXk6IC13ZWJraXQtZmxleCAhaW1wb3J0YW50O1xyXG4gIGRpc3BsYXk6IGZsZXggIWltcG9ydGFudDtcclxuICAtd2Via2l0LWFsaWduLWNvbnRlbnQ6IGNlbnRlciAhaW1wb3J0YW50O1xyXG4gIC1tcy1mbGV4LWxpbmUtcGFjazogY2VudGVyICFpbXBvcnRhbnQ7XHJcbiAgYWxpZ24tY29udGVudDogY2VudGVyICFpbXBvcnRhbnQ7XHJcbiAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlciAhaW1wb3J0YW50O1xyXG4gIC1tb3otYm94LWFsaWduOiBjZW50ZXIgIWltcG9ydGFudDtcclxuICAtd2Via2l0LWFsaWduLWl0ZW1zOiBjZW50ZXIgIWltcG9ydGFudDtcclxuICAtbXMtZmxleC1hbGlnbjogY2VudGVyICFpbXBvcnRhbnQ7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlciAhaW1wb3J0YW50O1xyXG4gIG1hcmdpbi1ib3R0b206IDIwcHggIWltcG9ydGFudDtcclxuICAubWVzc2FnZSB7XHJcbiAgICAtd2Via2l0LWJveC1mbGV4OiAxICFpbXBvcnRhbnQ7XHJcbiAgICAtbW96LWJveC1mbGV4OiAxICFpbXBvcnRhbnQ7XHJcbiAgICAtd2Via2l0LWZsZXg6IDEgMSBhdXRvICFpbXBvcnRhbnQ7XHJcbiAgICAtbXMtZmxleDogMSAxIGF1dG8gIWltcG9ydGFudDtcclxuICAgIGZsZXg6IDEgMSBhdXRvICFpbXBvcnRhbnQ7XHJcbiAgICBwYWRkaW5nOiAxMHB4ICFpbXBvcnRhbnQ7XHJcbiAgICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAyNTBtcyBlYXNlLWluLW91dCAhaW1wb3J0YW50O1xyXG4gICAgdHJhbnNpdGlvbjogYWxsIDI1MG1zIGVhc2UtaW4tb3V0ICFpbXBvcnRhbnQ7XHJcbiAgICBvdmVyZmxvdzogaGlkZGVuICFpbXBvcnRhbnQ7XHJcbiAgICB0ZXh0LWFsaWduOiBsZWZ0ICFpbXBvcnRhbnQ7XHJcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgMCwgMCkgIWltcG9ydGFudDtcclxuICAgIC1tb3otdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAwLCAwKSAhaW1wb3J0YW50O1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAwLCAwKSAhaW1wb3J0YW50O1xyXG4gIH1cclxufVxyXG4udGltZSB7XHJcbiAgLXdlYmtpdC1ib3gtZmxleDogMCAhaW1wb3J0YW50O1xyXG4gIC1tb3otYm94LWZsZXg6IDAgIWltcG9ydGFudDtcclxuICAtd2Via2l0LWZsZXg6IDAgMSBhdXRvICFpbXBvcnRhbnQ7XHJcbiAgLW1zLWZsZXg6IDAgMSBhdXRvICFpbXBvcnRhbnQ7XHJcbiAgZmxleDogMCAxIGF1dG8gIWltcG9ydGFudDtcclxuICAtd2Via2l0LWFsaWduLXNlbGY6IGF1dG8gIWltcG9ydGFudDtcclxuICAtbXMtZmxleC1pdGVtLWFsaWduOiBhdXRvICFpbXBvcnRhbnQ7XHJcbiAgYWxpZ24tc2VsZjogYXV0byAhaW1wb3J0YW50O1xyXG4gIHdpZHRoOiAxMjBweCAhaW1wb3J0YW50O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlciAhaW1wb3J0YW50O1xyXG4gIHBhZGRpbmc6IDAgMCAwIDAgIWltcG9ydGFudDtcclxuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAyNTBtcyBlYXNlLWluLW91dCAhaW1wb3J0YW50O1xyXG4gIHRyYW5zaXRpb246IGFsbCAyNTBtcyBlYXNlLWluLW91dCAhaW1wb3J0YW50O1xyXG4gIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgxMHB4LCAwLCAwKSAhaW1wb3J0YW50O1xyXG4gIC1tb3otdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgxMHB4LCAwLCAwKSAhaW1wb3J0YW50O1xyXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMTBweCwgMCwgMCkgIWltcG9ydGFudDtcclxuICAmLnNsaWRlLXJpZ2h0IHtcclxuICAgIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgxMzBweCwgMCwgMCkgIWltcG9ydGFudDtcclxuICAgIC1tb3otdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgxMzBweCwgMCwgMCkgIWltcG9ydGFudDtcclxuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMTMwcHgsIDAsIDApICFpbXBvcnRhbnQ7XHJcbiAgfVxyXG59XHJcbi8vVGhpcyB3aWxsIGNoYW5nZVxyXG4ubWVzc2FnZXMub3RoZXIge1xyXG4gIC5tZXNzYWdlIHtcclxuICAgIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAwLCAwKSAhaW1wb3J0YW50O1xyXG4gICAgLW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIDAsIDApICFpbXBvcnRhbnQ7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIDAsIDApICFpbXBvcnRhbnQ7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodCAhaW1wb3J0YW50O1xyXG4gIH1cclxuICAubWVzc2FnZS5zbGlkZS1yaWdodCB7XHJcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMTIwcHgsIDAsIDApICFpbXBvcnRhbnQ7XHJcbiAgICAtbW96LXRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMTIwcHgsIDAsIDApICFpbXBvcnRhbnQ7XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDEyMHB4LCAwLCAwKSAhaW1wb3J0YW50O1xyXG4gIH1cclxuICBzcGFuIHtcclxuICAgIGNvbG9yOiBibGFjayAhaW1wb3J0YW50O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0M3QzdDQyAhaW1wb3J0YW50O1xyXG4gIH1cclxufVxyXG5zcGFuIHtcclxuICBiYWNrZ3JvdW5kOiAjMDA3QUZGICFpbXBvcnRhbnQ7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrICFpbXBvcnRhbnQ7XHJcbiAgY29sb3I6IHdoaXRlICFpbXBvcnRhbnQ7XHJcbiAgcGFkZGluZzogMTBweCAhaW1wb3J0YW50O1xyXG4gIGJvcmRlci1yYWRpdXM6IDEwcHggIWltcG9ydGFudDtcclxuICB0ZXh0LWFsaWduOiBsZWZ0ICFpbXBvcnRhbnQ7XHJcbiAgbWF4LXdpZHRoOiAyNDBweCAhaW1wb3J0YW50O1xyXG59IiwiLnNjcm9sbCB7XG4gIHBhZGRpbmc6IDEwcHggMCA1MHB4ICFpbXBvcnRhbnQ7XG59XG5cbi5tZXNzYWdlcyB7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94ICFpbXBvcnRhbnQ7XG4gIGRpc3BsYXk6IC1tb3otYm94ICFpbXBvcnRhbnQ7XG4gIGRpc3BsYXk6IC1tcy1mbGV4Ym94ICFpbXBvcnRhbnQ7XG4gIGRpc3BsYXk6IC13ZWJraXQtZmxleCAhaW1wb3J0YW50O1xuICBkaXNwbGF5OiBmbGV4ICFpbXBvcnRhbnQ7XG4gIC13ZWJraXQtYWxpZ24tY29udGVudDogY2VudGVyICFpbXBvcnRhbnQ7XG4gIC1tcy1mbGV4LWxpbmUtcGFjazogY2VudGVyICFpbXBvcnRhbnQ7XG4gIGFsaWduLWNvbnRlbnQ6IGNlbnRlciAhaW1wb3J0YW50O1xuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyICFpbXBvcnRhbnQ7XG4gIC1tb3otYm94LWFsaWduOiBjZW50ZXIgIWltcG9ydGFudDtcbiAgLXdlYmtpdC1hbGlnbi1pdGVtczogY2VudGVyICFpbXBvcnRhbnQ7XG4gIC1tcy1mbGV4LWFsaWduOiBjZW50ZXIgIWltcG9ydGFudDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlciAhaW1wb3J0YW50O1xuICBtYXJnaW4tYm90dG9tOiAyMHB4ICFpbXBvcnRhbnQ7XG59XG4ubWVzc2FnZXMgLm1lc3NhZ2Uge1xuICAtd2Via2l0LWJveC1mbGV4OiAxICFpbXBvcnRhbnQ7XG4gIC1tb3otYm94LWZsZXg6IDEgIWltcG9ydGFudDtcbiAgLXdlYmtpdC1mbGV4OiAxIDEgYXV0byAhaW1wb3J0YW50O1xuICAtbXMtZmxleDogMSAxIGF1dG8gIWltcG9ydGFudDtcbiAgZmxleDogMSAxIGF1dG8gIWltcG9ydGFudDtcbiAgcGFkZGluZzogMTBweCAhaW1wb3J0YW50O1xuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAyNTBtcyBlYXNlLWluLW91dCAhaW1wb3J0YW50O1xuICB0cmFuc2l0aW9uOiBhbGwgMjUwbXMgZWFzZS1pbi1vdXQgIWltcG9ydGFudDtcbiAgb3ZlcmZsb3c6IGhpZGRlbiAhaW1wb3J0YW50O1xuICB0ZXh0LWFsaWduOiBsZWZ0ICFpbXBvcnRhbnQ7XG4gIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAwLCAwKSAhaW1wb3J0YW50O1xuICAtbW96LXRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgMCwgMCkgIWltcG9ydGFudDtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgwLCAwLCAwKSAhaW1wb3J0YW50O1xufVxuXG4udGltZSB7XG4gIC13ZWJraXQtYm94LWZsZXg6IDAgIWltcG9ydGFudDtcbiAgLW1vei1ib3gtZmxleDogMCAhaW1wb3J0YW50O1xuICAtd2Via2l0LWZsZXg6IDAgMSBhdXRvICFpbXBvcnRhbnQ7XG4gIC1tcy1mbGV4OiAwIDEgYXV0byAhaW1wb3J0YW50O1xuICBmbGV4OiAwIDEgYXV0byAhaW1wb3J0YW50O1xuICAtd2Via2l0LWFsaWduLXNlbGY6IGF1dG8gIWltcG9ydGFudDtcbiAgLW1zLWZsZXgtaXRlbS1hbGlnbjogYXV0byAhaW1wb3J0YW50O1xuICBhbGlnbi1zZWxmOiBhdXRvICFpbXBvcnRhbnQ7XG4gIHdpZHRoOiAxMjBweCAhaW1wb3J0YW50O1xuICB0ZXh0LWFsaWduOiBjZW50ZXIgIWltcG9ydGFudDtcbiAgcGFkZGluZzogMCAwIDAgMCAhaW1wb3J0YW50O1xuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAyNTBtcyBlYXNlLWluLW91dCAhaW1wb3J0YW50O1xuICB0cmFuc2l0aW9uOiBhbGwgMjUwbXMgZWFzZS1pbi1vdXQgIWltcG9ydGFudDtcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDEwcHgsIDAsIDApICFpbXBvcnRhbnQ7XG4gIC1tb3otdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgxMHB4LCAwLCAwKSAhaW1wb3J0YW50O1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDEwcHgsIDAsIDApICFpbXBvcnRhbnQ7XG59XG4udGltZS5zbGlkZS1yaWdodCB7XG4gIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgxMzBweCwgMCwgMCkgIWltcG9ydGFudDtcbiAgLW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDEzMHB4LCAwLCAwKSAhaW1wb3J0YW50O1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDEzMHB4LCAwLCAwKSAhaW1wb3J0YW50O1xufVxuXG4ubWVzc2FnZXMub3RoZXIgLm1lc3NhZ2Uge1xuICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgMCwgMCkgIWltcG9ydGFudDtcbiAgLW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDAsIDAsIDApICFpbXBvcnRhbnQ7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlM2QoMCwgMCwgMCkgIWltcG9ydGFudDtcbiAgdGV4dC1hbGlnbjogcmlnaHQgIWltcG9ydGFudDtcbn1cbi5tZXNzYWdlcy5vdGhlciAubWVzc2FnZS5zbGlkZS1yaWdodCB7XG4gIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGUzZCgxMjBweCwgMCwgMCkgIWltcG9ydGFudDtcbiAgLW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDEyMHB4LCAwLCAwKSAhaW1wb3J0YW50O1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZTNkKDEyMHB4LCAwLCAwKSAhaW1wb3J0YW50O1xufVxuLm1lc3NhZ2VzLm90aGVyIHNwYW4ge1xuICBjb2xvcjogYmxhY2sgIWltcG9ydGFudDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0M3QzdDQyAhaW1wb3J0YW50O1xufVxuXG5zcGFuIHtcbiAgYmFja2dyb3VuZDogIzAwN0FGRiAhaW1wb3J0YW50O1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2sgIWltcG9ydGFudDtcbiAgY29sb3I6IHdoaXRlICFpbXBvcnRhbnQ7XG4gIHBhZGRpbmc6IDEwcHggIWltcG9ydGFudDtcbiAgYm9yZGVyLXJhZGl1czogMTBweCAhaW1wb3J0YW50O1xuICB0ZXh0LWFsaWduOiBsZWZ0ICFpbXBvcnRhbnQ7XG4gIG1heC13aWR0aDogMjQwcHggIWltcG9ydGFudDtcbn0iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/consultation/consultation.page.ts":
+/*!***************************************************!*\
+  !*** ./src/app/consultation/consultation.page.ts ***!
+  \***************************************************/
+/*! exports provided: ConsultationPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConsultationPage", function() { return ConsultationPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+let ConsultationPage = class ConsultationPage {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+ConsultationPage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-consultation',
+        template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! raw-loader!./consultation.page.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/consultation/consultation.page.html")).default,
+        styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! ./consultation.page.scss */ "./src/app/consultation/consultation.page.scss")).default]
+    })
+], ConsultationPage);
+
+
+
+/***/ })
+
+}]);
+//# sourceMappingURL=consultation-consultation-module.js.map

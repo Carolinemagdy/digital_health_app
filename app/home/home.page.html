@@ -1,0 +1,33 @@
+<ion-header color ="Light">
+  <ion-toolbar color= "success">
+        <ion-title >
+          Sign In   
+        </ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+<ion-grid>
+  <ion-row>
+    <ion-col size-md="6" offset-md="3" >
+      <ion-card>
+        <ion-card-content>
+          <ion-item>
+            <ion-label color="warning" position="floating"> Username</ion-label>
+         <ion-input type="string"[(ngModel)]="Username"></ion-input>
+          </ion-item>
+          <ion-item class = "ion-padding-bottom">
+            <ion-label color="warning" position="floating"> ID</ion-label>
+         <ion-input type="number"[(ngModel)]="ID"></ion-input>
+          </ion-item>
+          <div class="ion-text-center">
+            <ion-button href="/tabs">Login
+            <ion-icon name="log-in" slot="start"></ion-icon>
+            </ion-button>
+              </div >
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
